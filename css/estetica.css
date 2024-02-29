@@ -1,0 +1,482 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* SCROLLBAR */
+
+/* Firefox */
+
+* {
+
+    scrollbar-width: thin;
+    scrollbar-color: #7B372E transparent;
+
+}
+
+/* Chrome, Edge, e Safari */
+
+*::-webkit-scrollbar {
+
+    width: 12px;
+
+}
+
+*::-webkit-scrollbar-track {
+
+    background: transparent;
+
+}
+
+*::-webkit-scrollbar-thumb {
+
+    background-color: #7B372E;
+    border-radius: 20px;
+    border: 1px solid white;
+
+}
+
+/* FIM SCROLLBAR */
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+/* MENU/HEADER */
+
+a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+header {
+
+    background-color: #B48E7B;
+    padding: 10px 20px;
+
+}
+
+nav {
+
+    display: flex;
+    align-items: center;
+
+}
+
+nav img {
+
+    height: 120px;
+    margin-left: 20px;
+
+}
+
+
+.menu {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+}
+
+.menu li {
+
+    margin-right: 20px;
+
+}
+
+.menu a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+nav button {
+
+    background-color: #33EC3A;
+    border-radius: 85px;
+    outline: none;
+    border: none;
+    height: 80px;
+    width: 280px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+
+}
+
+#whatsapp-icon {
+
+    height: 35px;
+    margin-right: 9px;
+
+}
+
+/* FIM MENU/HEADER */
+
+
+/* MAIN - IMAGEM INCIAL */
+
+.inicio {
+
+    position: relative;
+
+}
+
+#foto-inicio {
+
+    width: 100%;
+    filter: blur(5px);
+
+}
+
+#logo-inicio,
+#nome {
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#logo-inicio {
+
+    max-width: 50%;
+    width: 250px;
+
+}
+
+#nome {
+
+    top: 42%;
+    font-size: 48px;
+    color: #B48E7B;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+
+/* MAIN - QUEM SOMOS */
+
+.quem-somos-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#foto-quem {
+
+    width: 521px;
+    margin-right: 60px;
+
+}
+
+.texto {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+
+}
+
+.texto h1 {
+
+    order: -1;
+
+}
+
+#titulo-quem {
+
+    color: #B48E7B;
+    font-size: 96px;
+    font-family: "Josefin Sans", sans-serif;
+    width: 600px;
+    height: 96px;
+
+}
+
+.quem-somos-container p {
+
+    color: black;
+    font-size: 24px;
+    font-family: "Jomolhari", serif;
+    width: 907px;
+    height: 616px;
+
+}
+
+
+/* MAIN - PARALAX */
+
+.parallax {
+
+    background-image: url('https://i.imgur.com/FxiF86N.jpeg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* MAIN - EQUIPE */
+
+#equipe-titulo {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 96px;
+    color: #B48E7B;
+    margin-top: 110px;
+
+}
+
+.equipe-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 130px;
+
+}
+
+.membro {
+
+    text-align: center;
+    margin: 0 60px;
+    flex: 0 0 auto;
+
+}
+
+.membro img {
+
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 120px;
+    border: 6px solid #B48E7B;
+
+}
+
+
+
+/* MAIN - DEPOIMENTOS */
+
+.depoimentos-container {
+
+    background-color: #B48E7B;
+
+}
+
+.depoimentos-container h1 {
+
+    text-align: center;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 36px;
+
+}
+
+#depoimentos-titulo {
+
+    padding-top: 30px;
+    padding-bottom: 8px;
+
+}
+
+.cards-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+
+}
+
+.depoimento1 {
+
+    background-color: white;
+    width: 510px;
+    height: 197px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex: 0 0 auto;
+
+}
+
+.depoimento1 img {
+
+    width: 197px;
+    height: 197px;
+    margin: auto;
+    margin-left: 8%;
+
+}
+
+.depoimento1 p {
+
+    margin: 0;
+    text-align: left;
+    font-family: "Jomolhari", serif;
+    font-size: 20px;
+    width: 252px;
+    margin: auto;
+
+}
+
+
+
+/* MAIN - CONTATO */
+
+#contato-titulo {
+
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 96px;
+    align-items: center;
+    text-align: center;
+    color: #B48E7B;
+    margin-top: 110px;
+    margin-bottom: 110px;
+
+}
+
+.contato-container {
+
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 180px;
+
+}
+
+.contato-infos {
+
+    width: 256px;
+    display: inline-flex;
+
+}
+
+#correcao {
+
+    margin-top: 12px;
+
+}
+
+.contato-infos div {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+
+.contato-infos img {
+
+    width: 57px;
+    height: 57px;
+    text-align: left;
+
+}
+
+.contato-infos p {
+
+    width: 256px;
+    margin-top: 22px;
+
+}
+
+#diferenca {
+
+    width: 45px;
+    height: 45px;
+
+}
+
+.contato-map {
+
+    filter: blur(6px);
+    margin-left: 620px;
+
+}
+
+.contato-map img {
+
+    border-radius: 60px;
+
+}
+
+
+/* MAIN - FOOTER */
+
+footer {
+
+    background-color: #B48E7B;
+    padding: 10px 20px;
+
+}
+
+.rodape-container {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.rodape-container img {
+
+    height: 120px;
+    margin-left: 20px;
+
+}
+
+
+.menu {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+}
+
+.menu li {
+
+    margin-right: 20px;
+
+}
+
+.menu a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    font-family: "Josefin Sans", sans-serif;
+
+}
