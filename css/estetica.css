@@ -101,6 +101,12 @@ nav img {
 
 }
 
+.menu a:hover {
+
+    color: #7B372E;
+
+}
+
 nav button {
 
     background-color: #33EC3A;
@@ -115,6 +121,21 @@ nav button {
     text-align: center;
     justify-content: center;
     margin-right: 20px;
+    cursor: pointer;
+    transition: all 1s ease;
+
+}
+
+nav button:hover {
+
+    transform: scale(1.1);
+
+}
+
+nav button a {
+
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
 
 }
 
@@ -228,7 +249,7 @@ nav button {
 .parallax {
 
     background-image: url('https://i.imgur.com/FxiF86N.jpeg');
-    min-height: 500px;
+    min-height: 1366px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -278,7 +299,99 @@ nav button {
 
 }
 
+#membro1, #membro2,
+#membro3, #membro4,
+#membro5, #membro6,
+#membro7, #membro8,
+#membro9, #membro10,
+#membro11 {
 
+    cursor: pointer;
+
+}
+
+dialog {
+
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 1em black;
+    width: 60%;
+
+}
+
+#membros-button {
+
+    background-color: #7B372E;
+    color: rgb(255, 255, 255);
+    padding: 15px 110px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 80px;
+    cursor: pointer;
+    border: none;
+    font-family: "Jomolhari", serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: auto;
+
+}
+
+#membros-button:hover, #membros-button {
+    transition: all 750ms ease;
+}
+
+#membros-button:hover {
+    transform: scale(1.06);
+}
+
+.membros-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#foto-membro1 {
+
+    width: 521px;
+
+}
+
+.texto-membro1 {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.texto-membro1 h1 {
+
+    order: -1;
+
+}
+
+#titulo-membros {
+
+    color: #B48E7B;
+    font-size: 96px;
+    font-family: "Josefin Sans", sans-serif;
+    width: 600px;
+    height: 96px;
+
+}
+
+.membros-container p {
+
+    color: black;
+    font-size: 24px;
+    font-family: "Jomolhari", serif;
+    width: 607px;
+    height: 616px;
+
+}
 
 /* MAIN - DEPOIMENTOS */
 
@@ -409,6 +522,14 @@ nav button {
 
 }
 
+.contato-infos a {
+
+    color: black;
+    font-family: "Jomolhari", serif;
+    font-size: 14px;
+
+}
+
 #diferenca {
 
     width: 45px;
@@ -443,6 +564,7 @@ footer {
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -453,30 +575,44 @@ footer {
 
 }
 
+.rodape-container p {
 
-.menu {
+    color: white;
+    font-size: 24px;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+.menu-footer {
 
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
-    margin: auto;
+    flex-direction: column;
+    text-align: left;
 
 }
 
-.menu li {
+.menu-footer li {
 
     margin-right: 20px;
 
 }
 
-.menu a {
+.menu-footer a {
 
     color: white;
     text-decoration: none;
     font-size: 24px;
     transition: color 0.3s ease;
     font-family: "Josefin Sans", sans-serif;
+
+}
+
+.menu-footer a:hover {
+
+    color: #7B372E;
 
 }
